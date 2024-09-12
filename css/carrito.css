@@ -1,0 +1,292 @@
+/*Principal*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f8e3;
+    overflow-x: hidden;
+}
+
+.fondoverduras{
+    height: 150px;
+    opacity: 80%;
+}
+
+.comercializadorah1{
+    background: linear-gradient(#070707, #61616100);
+    background-color: #0707078a;
+    height: 100%;
+}
+
+/*Carrito*/
+
+.containercarrito{
+    background-color: #f6f8e3;
+}
+
+.containercarrito nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background: linear-gradient(#0707075c, #f6f8e3);
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.containercarrito nav i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.navcart {
+    display: none;
+}
+
+.containercarrito>nav>i>div>button{
+    display: none;
+}
+
+.navcart li {
+    list-style: none;
+    padding: 0.6rem;
+    font-weight: bold;
+}
+
+.containercarrito nav i:hover .buycart {
+    width: 430px;
+    height: 600px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    background-color: #fff;
+    transition: all 0.6s;
+    border: solid 4px #ffa200;
+    overflow-y: scroll;
+    cursor: default;
+}
+
+.containercarrito nav i:hover .buycart::-webkit-scrollbar {
+    height: 20px;
+}
+  
+.containercarrito nav i:hover .buycart::-webkit-scrollbar-track {
+    background: linear-gradient(#0be104,#056302);
+    border-radius: 20px;
+
+}
+  
+.containercarrito nav i:hover .buycart::-webkit-scrollbar-thumb {
+    background:linear-gradient(rgba(255, 166, 0, 0.721),rgb(245, 245, 220));   
+    border-radius: 50px; 
+    border: 3px solid #077a03;  
+}
+
+.containercarrito nav i:hover .navcart {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin #b9baae;
+}
+
+.containercarrito nav i:hover .buycart>button {
+    display: block;
+    width: 90%;
+    padding: 0.6rem;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #b9baae;
+    color: #077a03;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.containercarrito nav i .buycart #totalsinenvio{
+    display: none;
+    margin: 10px;
+    padding: 0.7rem;
+    color: #056302;
+    font-size: 18px;
+    list-style: none;
+    transition: all 0.2s;
+}
+
+.containercarrito nav i:hover .buycart #totalsinenvio{
+    display: flex;
+    transition: all 0.2s;
+}
+
+.containercarrito nav i:hover .buycart #totalsinenvio>div{
+    border: thin #b9baae solid;
+    width: 100%;
+    height: 40px;
+}
+
+.containercarrito nav i:hover .buycart>button:hover {
+    border: solid thin #333;
+    transition: all 0.4s;
+}
+
+.totalsinenvio{
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: black;
+}
+
+.totalsinenvio1{
+    font-size: 17px;
+    text-decoration: underline;
+    color: black;
+    position: fixed;
+    margin: 0 5% 0 0;
+    z-index: 1;
+    background-color: #b9baae57;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+    color: #222;
+}
+
+.gridcarrito {
+    display: grid;
+    max-width: 1100px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px,280px));
+    padding-bottom: 50px;
+}
+
+.itemscarrito {
+    background-color: #fff;
+    border: solid thin #1e1e1e;
+}
+
+.itemscarrito img {
+    width: 100%;
+    height: 170px;
+}
+
+.infocarrito {
+    padding: 15px;
+}
+
+.infocarrito h3{
+    font-size: 1.4rem;
+}
+
+.infocarrito p{
+    font-size: 0.9rem;
+}
+
+.preciocarrito {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.preciocarrito p {
+    font-size: 1.2rem;
+}
+
+.infocarrito h3,
+.infocarrito p{
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.preciocarrito p:first-child {
+    text-decoration: line-through;
+}
+
+.infocarrito button {
+    padding: 0.6rem;
+    width: 100%;
+    background-color: #ffa200;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.infocarrito button:hover {
+    background-color: #077a03;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+/*Acomodar los elementos del carrito de compras*/
+
+.lista_de_cursos>div{ 
+    display: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-top: solid thin gray;
+}
+
+.containercarrito nav i:hover .buycart> .lista_de_cursos>div{
+    display: flex;
+}
+
+.lista_de_cursos img{
+    width: 110px;
+    border: solid thin #077a03;
+    padding: 5px;
+}
+
+.lista_de_cursos p {
+    width: 500px;
+    font-size: 0.9rem;
+}
+
+.lista_de_cursos p:nth-child(4){
+    padding-left: 20px;
+    text-align: right;
+}
+
+.lista_de_cursos>div>div{
+    display: flex;
+    text-align: right;
+    font-size: 15px;
+    margin: 0 0 0 30px;
+}
+
+.lista_de_cursos>div>div>button{
+    height: 25px;
+    width: 15px;
+    border: thin solid #056302;
+    background-color: #ffa20051;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lista_de_cursos>div>div>span{
+    margin: 0 7px 0 7px;
+}
+
+.lista_de_cursos p:last-child span {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+

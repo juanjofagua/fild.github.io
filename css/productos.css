@@ -1,0 +1,84 @@
+/*Principal*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f8e3;
+    overflow-x: hidden;
+}
+
+.productos{
+    margin: 10px;
+    display: block;
+}
+
+.producto::-webkit-scrollbar {
+    height: 15px;
+}
+  
+.producto::-webkit-scrollbar-track {
+    background: linear-gradient(#0be104,#056302);
+}
+  
+.producto::-webkit-scrollbar-thumb {
+    background:linear-gradient(rgba(255, 166, 0, 0.721),rgb(245, 245, 220));   
+    border: 3px solid #077a03;  
+}
+
+.producto{
+    border: solid 3px #077a03;
+    border-radius: 2px;
+    height: 400px;
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10%;
+    overflow-x: scroll;
+    background-color: #077a0313;
+
+}
+
+.producto>img {
+    height: 100%;
+    border-right: solid thin black;
+}
+
+.producto>div>h3{
+    font-size: 50px;
+    height: 17%;
+    width: 600px;
+}
+
+.producto>div>p{
+    font-size: 21px;
+    height: 68%;
+    text-align: justify;
+    margin: 0 10px 0 0;
+}
+
+.producto>div>a{
+    font-size: 17.5px;
+    text-decoration: none;
+    height: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-left: 12.5%;
+    border: solid thin #077a03;
+    border-radius: 10px;
+    background-color: #ffa200;
+    color: #f6f8e3;
+    transition: all 0.8s;
+}
+
+.producto>div>a:hover {
+    background-color: #077a03;
+    border-color: #ffa200;
+    border-radius: 10px;
+    font-size: 21px;
+    transition: all 0.8s;
+}

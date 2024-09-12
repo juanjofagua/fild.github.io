@@ -1,0 +1,50 @@
+/*Principal*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f8e3;
+    overflow-x: hidden;
+}
+
+.condicionesdeuso {
+    margin: 10px;
+    border: double 8px #077a039f;
+    border-radius: 15px;
+}
+
+.condicionesdeuso>div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background-color: #077a034d;
+    border-right: solid thin black;
+    border-left: solid thin black;
+}
+
+.condicionesdeuso>div:first-child {
+    margin-top: 20px;
+    border-top: solid thin black;
+}
+
+.condicionesdeuso>div:last-child {
+    margin-bottom: 20px;
+    border-bottom: solid thin black;
+}
+
+.condicionesdeuso>div>h4 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 5px 10px 5px;
+    color: #ab6c00;
+}
+
+.condicionesdeuso>div>p {
+    text-align: justify;
+    font-size: 15px;
+    padding: 0 20px 20px 20px;
+}

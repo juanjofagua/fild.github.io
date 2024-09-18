@@ -317,9 +317,9 @@ header {
         width: 280px;
     }    
 
-    @media (max-width: 320px) {
+    @media (max-width: 380px) {
         .barrabusqueda:hover input {
-            width: 190px;
+            width: 225px;
         }    
     
     }

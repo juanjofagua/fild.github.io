@@ -311,3 +311,14 @@ h1{
 }
 
 
+/*EN DESARROLLO PARA QUE NO DESAPAREZACA EL BUYCART EN DISPOSITIVOS MOVILES*/
+
+@media (max-width: 450px) {
+    .buycart {
+        display: none; /* Por defecto, oculto */
+    }
+    
+    .buycart.active {
+        display: block; /* Cuando tiene la clase "active", se muestra */
+    }
+}

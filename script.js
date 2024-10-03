@@ -141,3 +141,19 @@ function limpiarHTML() {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
     }
 }
+
+/*EN DESARROLLO PARA QUE NO DESAPAREZACA EL BUYCART EN DISPOSITIVOS MOVILES*/
+
+
+const cartIcon = document.querySelector('.containercarrito nav i');
+const buycart = document.querySelector('.buycart');
+
+cartIcon.addEventListener('click', () => {
+  buycart.classList.toggle('active'); // Activa o desactiva la clase para mostrar el carrito
+});
+
+document.addEventListener('click', (event) => {
+  if (!cartIcon.contains(event.target) && !buycart.contains(event.target)) {
+    buycart.classList.remove('active'); // Cierra el carrito si se hace clic fuera de él
+  }
+});

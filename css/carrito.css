@@ -70,6 +70,27 @@ body {
     cursor: default;
 }
 
+@media (max-width: 450px){
+    .containercarrito nav i:hover .buycart{
+        width: 400px;
+        height: 600px;
+    }
+
+    @media (max-width: 410px) {
+        .containercarrito nav i:hover .buycart{
+            width: 360px;
+            height: 600px;
+        }
+    }
+
+    @media (max-width: 355px) {
+        .containercarrito nav i:hover .buycart{
+            width: 310px;
+            height: 600px;
+        }
+    }
+}
+
 .containercarrito nav i:hover .buycart::-webkit-scrollbar {
     height: 20px;
 }
